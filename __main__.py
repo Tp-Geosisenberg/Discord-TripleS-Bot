@@ -18,7 +18,7 @@ from discord.ext.commands import Bot
 from discord.voice_client import VoiceClient
 import asyncio
 from discord.ext import commands
-token='ODYyOTA0MzY5ODM4MTYxOTUw.YOfIUQ.vEwBt9P1eCJZB6C_7pkypix0nf8'
+token='' #Change for your token at here
 bot = commands.Bot(command_prefix='?')
 
 songsInstance = songAPI()
