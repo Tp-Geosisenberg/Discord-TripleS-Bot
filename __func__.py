@@ -27,7 +27,7 @@ def __bot_online__():
     async def on_ready():
         print('Bot {0.user} Online now !'.format(bot))
 
-    TOKEN = 'ODYyOTA0MzY5ODM4MTYxOTUw.YOfIUQ.vEwBt9P1eCJZB6C_7pkypix0nf8'        
+    TOKEN = ''  # Your token
     bot.run(TOKEN)
 
 
