@@ -44,4 +44,4 @@ I will show important method of function my code, when you called bot to play mu
 # :star: Update now
     -  ***[12/11/22]*** none
 # :hankey: Bug and Problems
--  ***[12/11/22]*** Cannot use name of music to seek and play
+-  ***[12/11/22]*** Cannot search for or play using song name
