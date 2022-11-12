@@ -53,31 +53,31 @@ def __autodeletemsg__(*arg , **kwarg):
 
 __autodeletemsg__()
 
-#def __playmusic__():
-#
-#
-#    @bot.command(name='play',  aliases=['p'])
-#    async def play(ctx, url):
-#        channel = ctx.author.voice.channel
-#        voice_client = get(bot.voice_clients, guild=ctx.guild)
-#
-#        if voice_client == None:
-#            await ctx.channel.send("Joined!")
-#            await channel.connect()
-#            voice_client = get(bot.voice_clients, guild=ctx.guild)
-#        YDL_OPTIONS = {'format' : 'bestaudio' , 'noplaylist' : 'True'}
-#        FFMPEG_OPTIONS = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5', 'options': '-vn'}
-#
-#        if not voice_client.is_playing():
-#            with YoutubeDL(YDL_OPTIONS) as ydl:
-#                info = ydl.extract_info(url, download=False)
-#            URL = info['formats'][0]['url']
-#            voice_client.play(discord.FFmpegPCMAudio(URL, **FFMPEG_OPTIONS))
-#            voice_client.is_playing()
-#        else:
-#            await ctx.channel.send("Already playing song")
-#
-#__playmusic__()
+def __playmusic__():
+
+
+    @bot.command(name='play',  aliases=['p'])
+    async def play(ctx, url):
+        channel = ctx.author.voice.channel
+        voice_client = get(bot.voice_clients, guild=ctx.guild)
+
+        if voice_client == None:
+            await ctx.channel.send("Joined!")
+            await channel.connect()
+            voice_client = get(bot.voice_clients, guild=ctx.guild)
+        YDL_OPTIONS = {'format' : 'bestaudio' , 'noplaylist' : 'True'}
+        FFMPEG_OPTIONS = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5', 'options': '-vn'}
+
+        if not voice_client.is_playing():
+            with YoutubeDL(YDL_OPTIONS) as ydl:
+                info = ydl.extract_info(url, download=False)
+            URL = info['formats'][0]['url']
+            voice_client.play(discord.FFmpegPCMAudio(URL, **FFMPEG_OPTIONS))
+            voice_client.is_playing()
+        else:
+            await ctx.channel.send("Already playing song")
+
+__playmusic__()
 
 
 def __help__(*arg , **kwarg):
