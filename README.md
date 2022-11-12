@@ -5,6 +5,8 @@
 You must install ffmpeg because of important this to make function in called bot to play music on your room at a Discord server 
 
 > git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg
+
+
 or you don't sure to use this, you can looking on the website : https://ffmpeg.org/download.html and you can read step-by-step from the website 
 
 
