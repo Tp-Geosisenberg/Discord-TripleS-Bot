@@ -42,6 +42,6 @@ __playmusic__()
 I will show important method of function my code, when you called bot to play music by command something such ? ,! ,@ ,# ,etc bot must to call `__playmusic__()` to play music input by its url or name  
 
 # :star: Update now
-    -  ***[12/11/22]*** none
+-  ***[12/11/22]*** none
 # :hankey: Bug and Problems
 -  ***[12/11/22]*** Cannot search for or play using song name
