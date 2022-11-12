@@ -8,7 +8,7 @@ You must install ffmpeg because of important this to make function in called bot
 or you don't sure to use this, you can looking on the website : https://ffmpeg.org/download.html and you can read step-by-step from the website 
 
 
-'''
+```
 
 def __playmusic__():
 
@@ -36,5 +36,5 @@ def __playmusic__():
 
 __playmusic__()
 
-'''
+```
 I will show important method of function my code, when you called bot to play music by command something such ? ,! ,@ ,# ,etc bot must to call __playmusic__() to play music input by its url or name  
